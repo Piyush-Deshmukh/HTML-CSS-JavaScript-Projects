@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+div {
+  text-align: center;
+  font-size: 25px;
+  padding: 25px 0;
+  word-spacing: 10px;
+  background-color: #c998f6;
+}
+
+p {
+  font-size: 25px;
+  padding: 10px 15px 2000px;
+  background-color: #f1e2ee;
+}
+
+.scroll-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #042b62;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.35s;
+}
+
+.scroll-to-top.active {
+  pointer-events: auto;
+  opacity: 1;
+}
